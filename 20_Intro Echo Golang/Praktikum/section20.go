@@ -109,7 +109,6 @@ func main() {
 	e := echo.New()
 	// routing with query parameter
 	e.GET("/users", GetUsersController)
-	e.POST("/users", CreateUserController)
 
 	// start the server, and log if it fails
 	e.Logger.Fatal(e.Start(":8000"))
